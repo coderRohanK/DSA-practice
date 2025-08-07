@@ -9,7 +9,6 @@ int longestConsecutive(vector<int>& nums) {
     int longest = 0;
 
     for (int num : numSet) {
-        // Only start counting if it's the beginning of a sequence
         if (numSet.find(num - 1) == numSet.end()) {
             int currentNum = num;
             int streak = 1;
